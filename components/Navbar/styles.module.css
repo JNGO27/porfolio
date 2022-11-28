@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.me-container {
+  display: flex;
+  align-items: center;
+  gap: 16px
+}
+
+.my-name {
+  font-size: 24px;
+  font-weight: var(--font-bold);
+  letter-spacing: -1px;
+}
+
+.navbar {
+  display: flex;
+  gap: 48px;
+}
