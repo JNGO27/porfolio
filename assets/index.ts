@@ -6,6 +6,7 @@ import React from './technologies/react.png';
 import HTML from './technologies/html5.png';
 import CSS from './technologies/css.png';
 import StyledComponents from './technologies/styled-components.png';
+import Redux from './technologies/Redux.png';
 import Next from './technologies/next.png';
 import API from './technologies/api.png';
 import Node from './technologies/node.png';
@@ -22,6 +23,7 @@ export {
   HTML,
   CSS,
   StyledComponents,
+  Redux,
   Next,
   API,
   Node,
