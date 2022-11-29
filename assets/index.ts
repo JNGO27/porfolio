@@ -11,6 +11,7 @@ import API from './technologies/api.png';
 import Node from './technologies/node.png';
 import SQL from './technologies/sql.png';
 import PostGres from './technologies/postgres.png';
+import Git from './technologies/git.png';
 
 export { 
   Self,
@@ -26,4 +27,5 @@ export {
   Node,
   SQL,
   PostGres,
+  Git,
 };
