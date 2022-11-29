@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .me-container {
@@ -11,9 +11,8 @@
 }
 
 .my-name {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: var(--font-bold);
-  letter-spacing: -1px;
 }
 
 .navbar {

@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <div className={styles.app}>
       <Navbar />
-      {/* <HeroBanner /> */}
+      <main className={styles["main-content"]}>
+        <HeroBanner />
+      </main>
     </div>
   )
 }

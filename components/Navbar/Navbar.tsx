@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import Self from '../../assets/myself.jpg';
+import { Self } from '../../assets';
 import styles from './styles.module.css';
 
 const Navbar = () => {
@@ -12,9 +12,9 @@ const Navbar = () => {
         <h2 className={styles['my-name']}>Joseph Napoleon Ochoa</h2>
       </div>
       <nav className={styles.navbar}>
-        <Link href="#home">Home</Link>
-        <Link href="#projects">Projects</Link>
         <Link href="#about-me">About Me</Link>
+        <Link href="#projects">Projects</Link>
+        <Link href="#skills">Skills</Link>
         <Link href="#contact">Contact</Link>
       </nav>
     </header>

@@ -6,14 +6,20 @@
   /* COLORS */
   --primary-background: hsl(210deg 15% 6%);
   --secondary-background: hsl(210deg 10% 90%);
+  
+  --shadow-color: hsl(360deg 100% 100% / 0.5);
+  --box-shadow: -0px 0px 300px 0px var(--shadow-color);
+  
+  --gradient-decoration-1: linear-gradient(to top, #da4453, #89216b);
+  --gradient-decoration-2: linear-gradient(to bottom, #da4453, #89216b);
 
-  --gradient-text: linear-gradient(166deg, rgba(117,107,238,1) 5%, rgba(216,86,255,1) 15%);
-
-  /* TYPOGROPHY */
-  --primary-font: "Wotfard",Futura,-apple-system,sans-serif;
+  --gradient-text: linear-gradient(180deg, hsl(245deg 79% 68%) 25%, hsl(286deg 100% 67%) 85%);
 
   --font-color-primary: hsl(210deg 10% 90%);
   --font-color-secondary: hsl(210deg 14% 66%);
+
+  /* TYPOGROPHY */
+  --primary-font: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -37,9 +43,14 @@ body {
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: var(--primary-font);
   color: var(--font-color-primary);
+  letter-spacing: -1px;
+
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
   text-decoration: none;
+  font-size: 1.25rem;
   font-weight: var(--font-semi-bold);
 }
