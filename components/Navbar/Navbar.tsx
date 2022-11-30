@@ -8,9 +8,11 @@ import styles from './styles.module.css';
 const Navbar = () => {
   return (
     <header className={styles.container}>
-      <div className={styles['me-container']}> 
-        <Image src={Self} height={40} width={40} alt="myself-image" style={selfStyles}/>
-        <h2 className={styles['my-name']}>Joseph Napoleon Ochoa</h2>
+      <div className={styles["me-container"]}> 
+        <div className={styles["me-image-outline"]}>
+          <Image src={Self} height={40} width={40} alt="myself-image" style={selfStyles}/>
+        </div>
+        <h2 className={styles["my-name"]}>Joseph Napoleon Ochoa</h2>
       </div>
       <nav className={styles.navbar}>
         <Link href="#about-me">About Me</Link>
