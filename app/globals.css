@@ -13,6 +13,8 @@
   --gradient-decoration-1: linear-gradient(to top, #da4453, #89216b);
   --gradient-decoration-2: linear-gradient(to bottom, #da4453, #89216b);
 
+  --image-decoration-1: hsl(210deg 15% 6% / 0.75);
+
   --gradient-text: linear-gradient(180deg, hsl(245deg 79% 68%) 25%, hsl(286deg 100% 67%) 85%);
 
   --font-color-primary: hsl(210deg 10% 90%);

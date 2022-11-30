@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import { Laptop } from '../../assets';
+import { Laptop, TS } from '../../assets';
+import { tsStyles, laptopStyles } from "./imagesStyles";
 import styles from './styles.module.css';
 
 const HeroBanner = () => {
@@ -11,9 +12,13 @@ const HeroBanner = () => {
         <p>I'm a Software Engineer who has a deep internal satisfaction through striving to achieve Mastery in my craft and strongly enjoy both Front-End and Back-End development. I have a vision to always get better, never stop learning, and ultimately keep building!</p>
       </div>
       <div className={styles["banner-self"]}>
-        <div className={styles.decoration} />
-        <Image src={Laptop} width={550} height={550} alt="laptop-svg" style={{ position: "absolute", inset: 0, margin: "auto" }}/>
-        <div className={styles.decoration} />
+        <div className={styles["icon-wrapper"]}>
+          <Image src={TS} width={50} height={50} alt="typescript-png" style={tsStyles} />
+        </div>
+        <h6 className={styles["laptop-name"]}>Joseph Napoleon Ochoa</h6>
+        <div className={styles["decoration-one"]} />
+        <Image src={Laptop} width={550} height={550} alt="laptop-svg" style={laptopStyles}/>
+        <div className={styles["decoration-two"]} />
       </div>
     </section>
   )
