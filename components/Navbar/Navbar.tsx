@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { Self } from '../../assets';
+import { CodingIcon } from '../../assets';
 import { selfStyles } from './imageStyles';
 import styles from './styles.module.css';
 
@@ -10,7 +10,7 @@ const Navbar = () => {
     <header className={styles.container}>
       <div className={styles["me-container"]}> 
         <div className={styles["me-image-outline"]}>
-          <Image src={Self} height={40} width={40} alt="myself-image" style={selfStyles}/>
+          <Image src={CodingIcon} height={40} width={40} alt="myself-image" style={selfStyles}/>
         </div>
         <h2 className={styles["my-name"]}>Joseph Napoleon Ochoa</h2>
       </div>
@@ -24,4 +24,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+export default Navbar;

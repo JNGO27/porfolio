@@ -5,10 +5,15 @@
 :root {
   /* COLORS */
   --primary-background: hsl(210deg 15% 6%);
-  --secondary-background: linear-gradient(180deg, rgba(67,133,149,1) 11%, rgba(27,84,126,1) 43%, rgba(5,9,45,1) 78%);
+  /* --secondary-background: linear-gradient(180deg, rgba(67,133,149,1) 11%, rgba(27,84,126,1) 43%, rgba(5,9,45,1) 78%); */
+  --content-background: hsl(210deg 15% 8%);
+  --portrait-border: hsl(0deg 1% 6% / 0.75);
   
-  --shadow-color: hsl(360deg 100% 100% / 0.5);
-  --box-shadow: -0px 0px 300px 0px var(--shadow-color);
+  --shadow-color-hero: hsl(360deg 100% 100% / 0.5);
+  --shadow-color-portrait: hsl(0deg 0% 10% / 0.5);
+  --box-shadow-hero: 0px 0px 300px 0px var(--shadow-color-hero);
+  --box-shadow-portrait: 5px 0px 30px 10px var(--shadow-color-portrait);
+  --box-shadow-content: 0px 0px 20px 10px var(--shadow-color-portrait);
   
   --gradient-decoration-1: linear-gradient(to top, #da4453, #89216b);
   --gradient-decoration-2: linear-gradient(to bottom, #da4453, #89216b);
@@ -22,6 +27,8 @@
 
   /* TYPOGROPHY */
   --primary-font: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
+  --paragraph-size: 1.5rem;
+  --paragraph-size-about: 1.25rem;
 
   --font-medium: 500;
   --font-semi-bold: 600;
@@ -30,6 +37,7 @@
 
   /* SPACING */
   --primary-padding: 42px 135px;
+  --section-spacing: 80px;
 }
 
 html,
@@ -55,4 +63,15 @@ a {
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: var(--font-semi-bold);
+}
+
+.styled-link {
+  font-size: var(--paragraph-size);
+
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
