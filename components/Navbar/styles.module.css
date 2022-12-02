@@ -2,12 +2,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  background-color: var(--primary-background);
 }
 
 .me-container {
   display: flex;
   align-items: center;
-  gap: 16px
+  gap: 16px;
+}
+
+.me-image-outline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2px;
+  border-radius: 50%;
+  background: var(--gradient-decoration-1);
 }
 
 .my-name {

@@ -1,5 +1,6 @@
-import Self from './myself.jpg';
+import Self from './myself.png';
 import Laptop from './laptop.svg';
+import CodingIcon from './coding-icon.png';
 import TS from './technologies/typescript.png';
 import JS from './technologies/javascript.png';
 import React from './technologies/react.png';
@@ -17,6 +18,7 @@ import Git from './technologies/git.png';
 export { 
   Self,
   Laptop,
+  CodingIcon,
   TS,
   JS,
   React,

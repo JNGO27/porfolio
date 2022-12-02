@@ -40,11 +40,11 @@
 }
 
 .banner-content p {
-  font-size: 1.5rem;
+  font-size: var(--paragraph-size);
   color: var(--font-color-secondary);
 
   width: 80%;
-  margin: -10px;
+  margin: -10px 0;
 }
 
 .banner-self {
@@ -68,7 +68,7 @@
 
   background: var(--gradient-decoration-1);
 
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-hero);
 }
 
 .decoration-two {
@@ -78,7 +78,7 @@
   border-radius: 150px;
   background: var(--gradient-decoration-2);
 
-  box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow-hero);
 }
 
 .icon-wrapper {

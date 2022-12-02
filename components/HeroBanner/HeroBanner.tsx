@@ -17,7 +17,7 @@ const HeroBanner = () => {
         </div>
         <h6 className={styles["laptop-name"]}>Joseph Napoleon Ochoa</h6>
         <div className={styles["decoration-one"]} />
-        <Image src={Laptop} width={550} height={550} alt="laptop-svg" style={laptopStyles}/>
+          <Image src={Laptop} width={550} height={550} alt="laptop-svg" style={laptopStyles}/>
         <div className={styles["decoration-two"]} />
       </div>
     </section>
