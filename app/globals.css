@@ -36,12 +36,11 @@
   --font-extra-bold: 800;
 
   /* SPACING */
-  --primary-padding: 42px 135px;
+  --primary-padding: 42px 7%;
   --section-spacing: 80px;
 
   /* GENERAL */
   --max-app-width: 1920px;
-
 }
 
 html,
