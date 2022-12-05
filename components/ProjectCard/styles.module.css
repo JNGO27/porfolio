@@ -22,10 +22,6 @@
 }
 
 .background {
-  display: flex;
-  flex-direction: column;
-  flex: 1.25;
-  
   height: 100%;
   padding: 20px;
   border-radius: 20px;
@@ -42,6 +38,7 @@
 
 .tech-list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   gap: 8px;
 

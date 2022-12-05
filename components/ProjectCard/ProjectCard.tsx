@@ -19,11 +19,9 @@ const ProjectCard = ({ title, content, tech }: Props) => {
         <h4 className={styles["tech-heading"]}>Technologies Used:</h4>
         <ul className={styles["tech-list"]}>
           {tech.map((technology, idx) => (
-            <>
-              <li key={idx}>
-                <h5 className={styles.tech}>{"- " +technology}</h5>
-              </li>
-            </>
+            <li key={idx + 1}>
+              <h5 className={styles.tech}>{"- " + technology}</h5>
+            </li>
           ))}
         </ul>
       </div>
