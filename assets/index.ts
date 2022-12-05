@@ -14,6 +14,8 @@ import Node from './technologies/node.png';
 import SQL from './technologies/sql.png';
 import PostGres from './technologies/postgres.png';
 import Git from './technologies/git.png';
+import WebLink from './website-link.svg';
+import GitHub from './github.svg';
 
 export { 
   Self,
@@ -32,4 +34,6 @@ export {
   SQL,
   PostGres,
   Git,
+  WebLink,
+  GitHub,
 };
