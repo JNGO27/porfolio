@@ -3,12 +3,17 @@
   width: fit-content;
   
   display: flex;  
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
 }
 
 .phone {
   position: relative;
+  
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+
   left: 150px;
   
   height: 200px;
@@ -33,6 +38,9 @@
 }
 
 .inner-phone-screen {    
+  display: flex;
+  justify-content: center;
+
   width: 100%;
   height: 100%;
   
@@ -41,15 +49,15 @@
 }
 
 .phone-decoration {
-  display: block;
+  position: absolute;
   
   width: 50px;
   height: 8px;
-  margin-left: auto;
-  margin-right: auto;
   
   border-radius: 0 0 8px 8px;
   background-color: black;
+
+  z-index: 20;
 }
 
 .laptop {  
