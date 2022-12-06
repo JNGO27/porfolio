@@ -6,7 +6,7 @@
 :root {
   /* COLORS */
   --primary-background: hsl(210deg 15% 6%);
-  /* --secondary-background: linear-gradient(180deg, rgba(67,133,149,1) 11%, rgba(27,84,126,1) 43%, rgba(5,9,45,1) 78%); */
+  --secondary-background: linear-gradient(180deg, rgba(67,133,149,1) 11%, rgba(27,84,126,1) 43%, rgba(5,9,45,1) 78%);
   --content-background: hsl(210deg 15% 8%);
   --portrait-border: hsl(0deg 1% 6% / 0.75);
   
@@ -19,13 +19,11 @@
   --gradient-decoration-1: linear-gradient(to top, hsl(354deg 67% 56%), hsl(317deg 61% 33%));
   --gradient-decoration-2: linear-gradient(to bottom, hsl(354deg 67% 56%), hsl(317deg 61% 33%));
   --gradient-decoration-3: linear-gradient(to top, hsl(354deg 67% 56% / 0.75), hsl(317deg 61% 33% / 0.75));
+  --gradient-decoration-4: linear-gradient(to bottom, hsl(354deg 67% 56% / 0.75), hsl(317deg 61% 33% / 0.25));
 
   --image-decoration-1: hsl(210deg 15% 6% / 0.75);
 
   --gradient-text: linear-gradient(180deg, hsl(245deg 79% 68%) 25%, hsl(286deg 100% 67%) 85%);
-
-  --font-color-primary: hsl(210deg 10% 90%);
-  --font-color-secondary: hsl(210deg 14% 66%);
 
   /* TYPOGROPHY */
   --primary-font: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
@@ -36,6 +34,9 @@
   --font-semi-bold: 600;
   --font-bold: 700;
   --font-extra-bold: 800;
+
+  --font-color-primary: hsl(210deg 10% 90%);
+  --font-color-secondary: hsl(210deg 14% 66%);
 
   /* SPACING */
   --primary-padding: 42px 7%;
@@ -82,4 +83,8 @@ a {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
+}
+
+input, textarea, button {
+  font: inherit;
 }
