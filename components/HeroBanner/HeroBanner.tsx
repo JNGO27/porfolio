@@ -1,6 +1,7 @@
 import Image from "next/image";
 
-import { Laptop, TS } from '../../assets';
+import { Laptop } from '../../assets';
+import { TS } from "../../assets/technologies";
 import { tsStyles, laptopStyles } from "./imagesStyles";
 import styles from './styles.module.css';
 

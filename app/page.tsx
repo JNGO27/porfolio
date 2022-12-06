@@ -1,4 +1,4 @@
-import { Navbar, HeroBanner, AboutMe, Projects } from "../components";
+import { Navbar, HeroBanner, AboutMe, Projects, Skills } from "../components";
 import styles from './page.module.css'; 
 
 const Home = () => {
@@ -9,6 +9,7 @@ const Home = () => {
         <HeroBanner />
         <AboutMe />
         <Projects />
+        <Skills />
       </main>
     </div>
   )
