@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+
 :root {
   /* COLORS */
   --primary-background: hsl(210deg 15% 6%);
@@ -44,6 +45,7 @@
 
   /* GENERAL */
   --max-app-width: 1920px;
+  --footer-border: hsl(210deg 10% 90% / 0.5);
 }
 
 html,
