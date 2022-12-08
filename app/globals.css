@@ -38,14 +38,22 @@
   /* SPACING */
   --primary-padding: 42px 135px;
   --section-spacing: 80px;
+
+  /* GENERAL */
+  --max-app-width: 1920px;
+
 }
 
 html,
 body {
+  display: block;
+
   height: 100%;
   width: 100%;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+
+  max-width: var(--max-app-width);
 
   background-color: var(--primary-background);
 }
