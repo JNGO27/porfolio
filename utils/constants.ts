@@ -1,7 +1,7 @@
 import { LyriksLaptop, LyriksTablet, LyriksMobile, FilmpireLaptop, FilmpireTablet, FilmpireMobile, MorrentLaptop, MorrentTablet, MorrentMobile } from '../assets/projectImages';
 import { TS, JS, React, HTML, CSS, StyledComponents, Redux, Next, API, Node, MongoDB, SQL, PostGres, Git } from '../assets/technologies';
 
-import { ProjectType, SkillListType, AllSkills } from '../types';
+import { ProjectType, SkillListType } from '../types';
 
 const Lyriks: ProjectType = {
   caseStudy: 1,
@@ -35,26 +35,35 @@ const Morrent: ProjectType = {
 
 export const projectsArr = [Lyriks, Filmpire, Morrent];
 
-export const frontEndSkills: SkillListType = [ 
-  { skill: TS, skillName: "TypeScript", type: "Front-End" }, 
-  { skill: JS, skillName: "JavaScript"}, 
-  { skill: React, skillName: "React" }, 
-  { skill: HTML, skillName: "HTML" }, 
-  { skill: CSS, skillName: "CSS" }, 
-  { skill: StyledComponents, skillName: "Styled Components" }, 
-  { skill: Redux, skillName: "Redux Toolkit" }, 
-  { skill: API, skillName: "API Data Fetching" }, 
-  { skill: Next, skillName: "Next.js" } 
-];
-
-export const backEndSkills: SkillListType = [ 
-  { skill: API, skillName: "RESTFUL API'S", type: "Back-End"}, 
-  { skill: Node, skillName: "Node.js" }, 
-  { skill: MongoDB, skillName: "MongoDB" }, 
-  { skill: SQL, skillName: "SQL" }, 
-  { skill: PostGres, skillName: "PostGreSQL" } 
-];
-
-export const other: SkillListType = [ { skill: Git, skillName: "Git", type: "Other"} ];
-
-export const allSkills: AllSkills = [ frontEndSkills, backEndSkills, other ];
+export const allSkills: SkillListType[] = [
+  {
+    type: "Front-End",
+    skills: [
+      { skill: TS, skillName: "TypeScript"}, 
+      { skill: JS, skillName: "JavaScript"}, 
+      { skill: React, skillName: "React" }, 
+      { skill: HTML, skillName: "HTML" }, 
+      { skill: CSS, skillName: "CSS" }, 
+      { skill: StyledComponents, skillName: "Styled Components" }, 
+      { skill: Redux, skillName: "Redux Toolkit" }, 
+      { skill: API, skillName: "API Data Fetching" }, 
+      { skill: Next, skillName: "Next.js" } 
+    ]
+  },
+  {
+    type: "Back-End",
+    skills: [
+      { skill: API, skillName: "RESTFUL API'S", }, 
+      { skill: Node, skillName: "Node.js" }, 
+      { skill: MongoDB, skillName: "MongoDB" }, 
+      { skill: SQL, skillName: "SQL" }, 
+      { skill: PostGres, skillName: "PostGreSQL" },
+    ]
+  },
+  {
+    type: "Other",
+    skills: [
+      { skill: Git, skillName: "Git", },
+    ]
+  }
+ ];
