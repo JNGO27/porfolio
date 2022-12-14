@@ -15,10 +15,12 @@ export type ProjectType = {
   tech: string[];
 };
 
-export type SkillListType = { 
+export type IndividualSkill = {
   skill: StaticImageData;
   skillName: string;
-  type?: "Front-End" | "Back-End" | "Other";
-}[];
+};
 
-export type AllSkills = SkillListType[];
+export type SkillListType = { 
+  type: "Front-End" | "Back-End" | "Other";
+  skills: IndividualSkill[];
+};
