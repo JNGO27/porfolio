@@ -45,3 +45,9 @@
 
   width: fit-content;
 }
+
+.case-study-inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}

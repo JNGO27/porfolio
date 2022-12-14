@@ -2,7 +2,6 @@ import Image from 'next/image';
 
 import { ProjectType } from '../../types';
 import { mobileImgStyles, laptopImgStyles, tabletImgStyles } from './imageStyles';
-import { ProjectCard } from '../';
 import styles from './styles.module.css';
 
 type Props = { project: ProjectType };
@@ -36,7 +35,6 @@ const Devices = ({ project }: Props) => {
             </div> 
           </div>
         </div>
-        <ProjectCard title={project.title} content={project.content} tech={project.tech} />
       </div>
     </>
   )

@@ -1,9 +1,8 @@
 .devices {
   height: 100%;
-  width: fit-content;
-  
-  display: flex;  
-  justify-content: center;
+
+  display: flex;
+  flex: 1;
   align-items: flex-end;
 }
 
