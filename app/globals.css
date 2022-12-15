@@ -90,3 +90,9 @@ a {
 input, textarea, button {
   font: inherit;
 }
+
+@media (max-width: 1920px) {
+  html, body {
+    margin: 0;
+  }
+}

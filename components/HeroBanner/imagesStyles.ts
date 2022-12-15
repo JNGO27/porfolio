@@ -5,8 +5,8 @@ export const tsStyles: ImageStyles = {
 };
 
 export const laptopStyles: ImageStyles = {
-  width: "92%",
-  height: "92%",
+  width: "clamp(300px, 92%, 100%)",
+  height: "clamp(300px, 92%, 100%)",
   position: "absolute",
   inset: 0, 
   margin: "auto",
