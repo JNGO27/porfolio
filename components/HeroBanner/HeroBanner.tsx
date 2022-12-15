@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import { Laptop } from '../../assets';
 import { TS } from "../../assets/technologies";
-import { tsStyles, laptopStyles } from "./imagesStyles";
 import styles from './styles.module.css';
 
 const HeroBanner = () => {
@@ -14,12 +13,14 @@ const HeroBanner = () => {
       </div>
       <div className={styles["banner-self"]}>
         <div className={styles["icon-wrapper"]}>
-          <Image src={TS} width={50} height={50} alt="typescript-png" style={tsStyles} />
+          <Image className={styles["ts-image"]} src={TS} alt="typescript-png" />
         </div>
         <h6 className={styles["laptop-name"]}>Joseph Napoleon Ochoa</h6>
-        <div className={styles["decoration-one"]} />
-          <Image src={Laptop} alt="laptop-svg" style={laptopStyles}/>
-        <div className={styles["decoration-two"]} />
+        <div className={styles["decoration-container"]}>
+          <div className={styles["decoration-one"]} />
+            <Image className={styles["laptop-image"]} src={Laptop} alt="laptop-svg" />
+          <div className={styles["decoration-two"]} />
+        </div>
       </div>
     </section>
   )
