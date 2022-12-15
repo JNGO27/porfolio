@@ -119,3 +119,10 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 650px) {
+  .banner-text {
+    line-height: 1.5;
+  }
+}
+

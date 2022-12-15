@@ -10,7 +10,11 @@
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  font-size: 3rem;
+
+  font-size: clamp(
+    2rem,
+    4.2vw + 1rem,
+    3rem);
 }
 
 .contact-form {
