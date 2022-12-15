@@ -61,4 +61,17 @@
 
   display: flex;
   justify-content: space-evenly;
+} 
+
+@media (max-width: 1030px) {
+  .project-card {
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 1030px) {
+  .heading {
+    margin-top: 100px;
+  }
 }
