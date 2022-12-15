@@ -63,14 +63,14 @@
   justify-content: space-evenly;
 } 
 
-@media (max-width: 1030px) {
+@media (max-width: 1280px) {
   .project-card {
     align-items: center;
   }
 }
 
 
-@media (max-width: 1030px) {
+@media (max-width: 1280px) {
   .heading {
     margin-top: 100px;
   }

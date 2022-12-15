@@ -1,8 +1,9 @@
 .devices {
   height: 100%;
+  width: 100%;
 
   display: flex;
-  flex: 1;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -13,10 +14,10 @@
   justify-content: center;
   align-items: center;
 
-  left: 150px;
+  left: 100px;
   
-  height: 200px;
-  width: 100px;
+  height: 153px;
+  width: 77px;
   padding: 4px;
   
   z-index: 10;
@@ -47,24 +48,12 @@
   background-color: white;
 }
 
-.phone-decoration {
-  position: absolute;
-  
-  width: 50px;
-  height: 8px;
-  
-  border-radius: 0 0 8px 8px;
-  background-color: black;
-
-  z-index: 20;
-}
-
 .laptop {  
   position: relative;
   top: -60px;
   
-  width: 425px;
-  height: 275px;
+  width: 325px;
+  height: 210px;
   padding: 4px;
     
   border-radius: 28px;
@@ -116,8 +105,8 @@
   bottom: -20px;
   right: 185px;
   
-  width: 275px;
-  height: 175px;
+  width: 200px;
+  height: 134px;
   padding: 4px;
     
   border-radius: 28px;

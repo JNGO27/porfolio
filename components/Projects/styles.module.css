@@ -49,5 +49,10 @@
 .case-study-inner {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
+}
+
+@media (max-width: 1280px) {
+  .case-study-inner {
+    flex-direction: column;
+  }
 }

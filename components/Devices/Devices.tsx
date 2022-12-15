@@ -13,15 +13,14 @@ const Devices = ({ project }: Props) => {
         <div className={styles.phone}>
           <div className={styles["inner-phone-border"]}>
             <div className={styles["inner-phone-screen"]}>
-              <div className={styles["phone-decoration"]}></div>
-              <Image src={project.mobileImg} alt="mobile-device-img" width={85} height={185} objectFit="fill" style={mobileImgStyles} />
+              <Image src={project.mobileImg} alt="mobile-device-img" objectFit="fill" style={mobileImgStyles} />
           </div>
           </div>
         </div>
         <div className={styles.laptop}>
           <div className={styles["inner-laptop-border"]}>
             <div className={styles["inner-laptop-screen"]}>
-              <Image src={project.laptopImg} alt="laptop-device-img" width={390} height={234} objectFit="fill" style={laptopImgStyles} />
+              <Image src={project.laptopImg} alt="laptop-device-img" objectFit="fill" style={laptopImgStyles} />
             </div> 
             <div className={styles["laptop-bottom"]}>
               <div className={styles["laptop-bottom-decoration"]}></div>
@@ -31,7 +30,7 @@ const Devices = ({ project }: Props) => {
         <div className={styles.tablet}>
           <div className={styles["tablet-laptop-border"]}>
             <div className={styles["tablet-laptop-screen"]}>
-              <Image src={project.tabletImg} alt="tablet-device-img" width={255} height={155} objectFit="fill" style={tabletImgStyles} />
+              <Image src={project.tabletImg} alt="tablet-device-img" objectFit="fill" style={tabletImgStyles} />
             </div> 
           </div>
         </div>
