@@ -209,4 +209,12 @@
   
     z-index: 10;
   }
+
+  .banner-text {
+    max-width: 95%;
+  }
+
+  .banner-content p {
+    width: 90%;
+  }
 }
