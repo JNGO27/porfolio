@@ -147,3 +147,15 @@
     bottom: 144px;
   }
 }
+
+@media(max-width: 550px) {
+  .phone {
+    left: -120px;
+    top: 200px;
+  }
+
+  .tablet {
+    left: 65px;
+    bottom: 144px;
+  }
+}
