@@ -5,7 +5,7 @@ import { ProjectCard } from '../';
 
 const Projects = () => {
   return (
-    <section className={styles.projects}>
+    <section className={styles.projects} id="projects">
       <h1 className={styles.heading}>Projects</h1>
       {projectsArr.map(project => (
         <div key={project.caseStudy} className={styles["case-study"]}>

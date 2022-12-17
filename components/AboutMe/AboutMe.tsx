@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 const AboutMe = () => {
   return (
-    <div className={styles["about-me"]}>
+    <section className={styles["about-me"]} id="about-me">
       <div className={styles["picture-frame-wrapper"]}>
       <div className={styles["picture-frame"]}>
         <Image src={Self} width={225} height={225} alt="self-image" style={portraitStyles}/>
@@ -28,7 +28,7 @@ const AboutMe = () => {
         </div>
         <div className={styles.decoration} />
       </div>
-    </div>
+    </section>
   )
 }
 

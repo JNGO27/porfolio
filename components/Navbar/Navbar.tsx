@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 import { CodingIcon, MenuIcon } from '../../assets';
 import { logoStyles } from './imageStyles';
@@ -15,10 +14,10 @@ const Navbar = () => {
         <h2 className={styles["my-name"]}>Joseph Napoleon Ochoa</h2>
       </div>
       <nav className={styles.navbar}>
-        <Link href="#about-me">About Me</Link>
-        <Link href="#projects">Projects</Link>
-        <Link href="#skills">Skills</Link>
-        <Link href="#contact">Contact</Link>
+        <a href="#about-me">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
       <Image className={styles.menu} src={MenuIcon} alt="menu-icon" />
     </header>

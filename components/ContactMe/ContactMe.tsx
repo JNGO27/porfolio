@@ -2,7 +2,7 @@ import styles from './styles.module.css';
 
 const ContactMe = () => {
   return (
-    <form className={styles["contact-form"]} action="https://formsubmit.co/josephochoa91@gmail.com" method="POST">
+    <form className={styles["contact-form"]} action="https://formsubmit.co/josephochoa91@gmail.com" method="POST" id="contact">
       <h1 className={styles.heading}>Contact Me</h1>
       <div className={styles.decoration}>
         <div className={styles["user-info"]}>
