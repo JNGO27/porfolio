@@ -87,11 +87,17 @@
 
   color: var(--font-color-primary);
   background: var(--gradient-decoration-3);
+
+  cursor: pointer;
 }
 
 @media(max-width: 650px) {  
   .user-info input {
     width: 250px;
     min-width: 100px;
+  }
+
+  .message {
+    max-width: 320px;
   }
 }

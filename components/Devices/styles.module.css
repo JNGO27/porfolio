@@ -1,4 +1,46 @@
 .devices {
+  --laptop-width: 425px;
+  --laptop-height: 275px;
+  --tablet-width: 275px;
+  --tablet-height: 175px;
+  --phone-width: 100px;
+  --phone-height: 200px;
+
+  --laptop-width2: 325px;
+  --laptop-height2: 210px;
+  --tablet-width2: 200px;
+  --tablet-height2: 134px;
+  --phone-width2: 77px;
+  --phone-height2: 153px;
+
+  --laptop-width3: 300px;
+  --laptop-height3: 190px;
+  --tablet-width3: 215px;
+  --tablet-height3: 145px;
+  --phone-width3: 68px;
+  --phone-height3: 142px;
+
+  --laptop-image-width: 390px;
+  --laptop-image-height: 234px;
+  --tablet-image-width: 255px;
+  --tablet-image-height: 155px;
+  --phone-image-width: 85px;
+  --phone-image-height: 185px;
+
+  --laptop-image-width2: 295px;
+  --laptop-image-height2: 179px;
+  --tablet-image-width2: 185px;
+  --tablet-image-height2: 118px;
+  --phone-image-width2: 65px;
+  --phone-image-height2: 142px;
+
+  --laptop-image-width3: 266px;
+  --laptop-image-height3: 167px;
+  --tablet-image-width3: 185px;
+  --tablet-image-height3: 126px;
+  --phone-image-width3: 62px;
+  --phone-image-height3: 132px;
+
   height: 100%;
   width: 100%;
 
@@ -16,8 +58,8 @@
 
   left: 100px;
   
-  height: 153px;
-  width: 77px;
+  height: var(--phone-height);
+  width: var(--phone-width);
   padding: 4px;
   
   z-index: 10;
@@ -52,8 +94,8 @@
   position: relative;
   top: -60px;
   
-  width: 325px;
-  height: 210px;
+  width: var(--laptop-width);
+  height: var(--laptop-height);
   padding: 4px;
     
   border-radius: 28px;
@@ -105,8 +147,8 @@
   bottom: -20px;
   right: 185px;
   
-  width: 200px;
-  height: 134px;
+  width: var(--tablet-width);
+  height: var(--tablet-height);
   padding: 4px;
     
   border-radius: 28px;
@@ -130,6 +172,23 @@
   background-color: white;
 }
 
+.laptop-image {
+  width: var(--laptop-image-width);
+  height: var(--laptop-image-height);
+}
+
+
+.tablet-image {
+  width: var(--tablet-image-width);
+  height: var(--tablet-image-height);
+}
+
+
+.phone-image {
+  width: var(--phone-image-width);
+  height: var(--phone-image-height);
+}
+
 @media(max-width: 1280px) {
   .devices {
     flex-direction: column;
@@ -138,8 +197,8 @@
   }
 
   .phone {
-    left: -100px;
-    top: 200px;
+    left: -140px;
+    top: 300px;
   }
 
   .tablet {
@@ -148,14 +207,75 @@
   }
 }
 
+@media(max-width: 800px) {
+  .phone {
+    width: var(--phone-width2);
+    height: var(--phone-height2);
+
+    left: -100px;
+    top: 200px;
+  }
+
+  .laptop {
+    width: var(--laptop-width2);
+    height: var(--laptop-height2);   
+  }
+
+  .tablet {
+    width: var(--tablet-width2);
+    height: var(--tablet-height2);
+  }
+
+  .phone-image {
+    width: var(--phone-image-width2);
+    height: var(--phone-image-height2);
+  }
+
+  .laptop-image {
+    width: var(--laptop-image-width2);
+    height: var(--laptop-image-height2);   
+  }
+
+  .tablet-image {
+    width: var(--tablet-image-width2);
+    height: var(--tablet-image-height2);
+  }
+}
+
 @media(max-width: 550px) {
   .phone {
+    width: var(--phone-width3);
+    height: var(--phone-height3);
+
     left: -120px;
     top: 200px;
   }
 
+  .laptop {
+    width: var(--laptop-width3);
+    height: var(--laptop-height3);   
+  }
+
   .tablet {
+    width: var(--tablet-width3);
+    height: var(--tablet-height3);
+
     left: 65px;
     bottom: 144px;
+  }
+
+  .phone-image {
+    width: var(--phone-image-width3);
+    height: var(--phone-image-height3);
+  }
+
+  .laptop-image {
+    width: var(--laptop-image-width3);
+    height: var(--laptop-image-height3);   
+  }
+
+  .tablet-image {
+    width: var(--tablet-image-width3);
+    height: var(--tablet-image-height3);
   }
 }
