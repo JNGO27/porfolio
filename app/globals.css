@@ -9,6 +9,7 @@
   --primary-background: hsl(210deg 15% 6%);
   --secondary-background: linear-gradient(180deg, rgba(67,133,149,1) 11%, rgba(27,84,126,1) 43%, rgba(5,9,45,1) 78%);
   --content-background: hsl(210deg 15% 8%);
+  --mobile-menu-background: hsl(210deg 25% 10%);
   --portrait-border: hsl(0deg 1% 6% / 0.75);
   
   --shadow-color-hero: hsl(360deg 100% 100% / 0.5);

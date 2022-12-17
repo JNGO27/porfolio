@@ -8,4 +8,3 @@ export { default as Skills } from './Skills/Skills';
 export { default as SingleSkill } from './SingleSkill/SingleSkill';
 export { default as ContactMe } from './ContactMe/ContactMe';
 export { default as Footer } from './Footer/Footer';
-export { default as MobileMenu } from './MobileMenu/MobileMenu';
