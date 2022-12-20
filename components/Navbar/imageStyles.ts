@@ -1,5 +1,5 @@
 import { ImageStyles } from "../../types";
 
-export const selfStyles: ImageStyles = { 
+export const logoStyles: ImageStyles = { 
   borderRadius: "50%",
 };

@@ -31,3 +31,119 @@
   display: flex;
   gap: 48px;
 }
+
+.menu {
+  display: none;
+}
+
+.close {
+  display: none;
+}
+
+.mobile-opener {
+  display: none;
+}
+
+.mobile-navbar {
+  display: none;
+}
+
+@media (max-width: 1030px) {
+  .my-name {
+    font-size: 20px;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+
+  .navbar {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu {
+    display: revert;
+
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+  }
+
+  .mobile-opener {
+    display: revert;
+
+    position: absolute;
+    right: 40px;
+    
+    width: 50px;
+    height: 50px;
+
+    opacity: 0;
+    z-index: 10;
+
+    cursor: pointer;
+  }
+
+  .mobile-opener:checked ~ .mobile-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    position: absolute;
+    top: 100px;
+    right: 40px;
+    
+    width: fit-content;
+    height: fit-content;
+    max-height: 200px;
+    padding: 20px;
+    
+    
+    background: var(--mobile-menu-background);
+  }
+
+  .mobile-opener:checked ~ .menu {
+    display: none;
+  }
+
+  .mobile-opener:checked ~ .close {
+    position: absolute;
+    right: 50px;
+    display: revert;
+  
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+  }
+}
+
+@media(max-width: 650px) {
+  .my-name {
+    font-size: 18px;
+  }
+
+  .mobile-opener {
+    position: absolute;
+    right: 30px;
+  }
+
+  .menu {
+    width: 24px;
+    height: 24px;
+  }
+
+  .mobile-opener:checked ~ .close {
+    position: absolute;
+    right: 35px;
+    display: revert;
+  
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -13,7 +13,6 @@ export const laptopImgStyles: ImageStyles = {
 export const tabletImgStyles: ImageStyles = {
   position: "relative",
   bottom: 10,
-  right: 6,
-  borderRadius: 24,
-  objectFit: "fill",
+  right: 4,
+  borderRadius: 20,
 };

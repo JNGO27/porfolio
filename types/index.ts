@@ -14,3 +14,11 @@ export type ProjectType = {
   content: string;
   tech: string[];
 };
+
+export type SkillListType = { 
+  skill: StaticImageData;
+  skillName: string;
+  type?: "Front-End" | "Back-End" | "Other";
+}[];
+
+export type AllSkills = SkillListType[];

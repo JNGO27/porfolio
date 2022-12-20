@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
-import { CodingIcon } from '../../assets';
-import { selfStyles } from './imageStyles';
+import { CodingIcon, MenuIcon, CloseIcon } from '../../assets';
+import { logoStyles } from './imageStyles';
 import styles from './styles.module.css';
 
 const Navbar = () => {
@@ -10,16 +9,25 @@ const Navbar = () => {
     <header className={styles.container}>
       <div className={styles["me-container"]}> 
         <div className={styles["me-image-outline"]}>
-          <Image src={CodingIcon} height={40} width={40} alt="myself-image" style={selfStyles}/>
+          <Image src={CodingIcon} height={40} width={40} alt="myself-image" style={logoStyles}/>
         </div>
         <h2 className={styles["my-name"]}>Joseph Napoleon Ochoa</h2>
       </div>
       <nav className={styles.navbar}>
-        <Link href="#about-me">About Me</Link>
-        <Link href="#projects">Projects</Link>
-        <Link href="#skills">Skills</Link>
-        <Link href="#contact">Contact</Link>
+        <a href="#about-me">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </nav>
+      <input className={styles["mobile-opener"]} type="checkbox" /> 
+        <Image className={styles.menu} src={MenuIcon} alt="menu-icon" />
+        <Image className={styles.close} src={CloseIcon} alt="clone-menu-icon"/>
+        <nav className={styles["mobile-navbar"]}>
+          <a href="#about-me">About Me</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
     </header>
   )
 }

@@ -37,7 +37,10 @@
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  font-size: 4rem;
+  font-size: clamp(
+    2rem,
+    4.2vw + 1rem,
+    4rem);
 
   z-index: 20;
 }
@@ -63,8 +66,6 @@
 }
 
 .picture-frame-wrapper { 
-  align-self: flex-start;
-
   width: 100%;
   height: 100%;
 
@@ -82,7 +83,6 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex: 1;
 
   background: black;
   border: 10px solid var(--portrait-border);
@@ -92,4 +92,30 @@
 .decoration {
   background: var(--gradient-decoration-1);
   width: 2px;
+}
+
+@media (max-width: 1030px) {
+  .container {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .decoration {
+    width: 100%;
+    height: 2px;
+  }
+
+  .picture-frame-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .picture-frame {
+    position: none;
+    right: 0;
+  }
 }
