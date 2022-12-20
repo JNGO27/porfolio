@@ -12,6 +12,8 @@ export const projectsArr: ProjectType[] = [
     title: "Lyriks",
     content: "A media player",
     tech: ["Next.js", "React", "Redux Toolkit", "Redux RTK Query", "Styled Components", "Shazam API"],
+    link: "https://lyriks-music-jngo27.vercel.app/home",
+    github: "https://github.com/JNGO27/Lyriks",
   },
   {
     caseStudy: 2,
@@ -21,6 +23,8 @@ export const projectsArr: ProjectType[] = [
     title: "Filmpire",
     content: "A Movie application",
     tech: ["React", "CSS Modules", "Redux Toolkit", "Redux RTK Query", "TMDB API"],
+    link: "https://main--filmpire-jngo27.netlify.app/",
+    github: "https://github.com/JNGO27/Filmpire-JNGO27",
   },
   {
     caseStudy: 3,
@@ -30,6 +34,8 @@ export const projectsArr: ProjectType[] = [
     title: "Morrent",
     content: "A Car Rental Marketplace",
     tech: ["TypeScript", "React", "Styled Components", "Express", "MongoDB", "Google OAuth 2.0", "Passport.js", "Stripe"],
+    link: "",
+    github: "",
   },
 ];
 

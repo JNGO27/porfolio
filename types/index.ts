@@ -13,6 +13,8 @@ export type ProjectType = {
   title: string;
   content: string;
   tech: string[];
+  link: string;
+  github: string;
 };
 
 export type IndividualSkill = {

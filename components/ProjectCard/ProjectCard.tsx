@@ -8,9 +8,11 @@ type Props = {
   title: string;
   content: string;
   tech: string[];
+  link: string;
+  github: string;
 };
 
-const ProjectCard = ({ title, content, tech }: Props) => {
+const ProjectCard = ({ title, content, tech, link, github }: Props) => {
   return (
     <div className={styles["project-card"]}>
       <h2 className={styles.heading}>{title}</h2>
@@ -26,8 +28,18 @@ const ProjectCard = ({ title, content, tech }: Props) => {
         </ul>
       </div>
       <div className={styles["icons-container"]}>
-        <Image src={WebLink} width={50} height={50} alt="weblink-icon" style={iconStyles} />
-        <Image src={GitHub} width={34} height={34} alt="github-icon" style={iconStyles} />
+        {link && github ?
+          <>
+          <a target="_blank" href={link} rel="noopener noreferrer">
+            <Image src={WebLink} width={50} height={50} alt="weblink-icon" style={iconStyles} />
+          </a>
+          <a  target="_blank" href={github} rel="noopener noreferrer">
+            <Image src={GitHub} width={34} height={34} alt="github-icon" style={iconStyles} />
+          </a>
+          </>
+        :
+        <h3>in progress...</h3>
+      }
       </div>
     </div>
   )

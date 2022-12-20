@@ -12,7 +12,7 @@ const Projects = () => {
           <h2 className={styles["case-study-heading"]}>Case Study</h2>
           <div className={styles["case-study-inner"]}>
             <Devices project={project} />
-            <ProjectCard title={project.title} content={project.content} tech={project.tech} />
+            <ProjectCard title={project.title} content={project.content} tech={project.tech} link={project.link} github={project.github} />
           </div>
         </div>
       ))}
