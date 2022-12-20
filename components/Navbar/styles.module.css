@@ -29,6 +29,7 @@
 
 .navbar {
   display: flex;
+  align-items: center;
   gap: 48px;
 }
 
@@ -48,6 +49,25 @@
   display: none;
 }
 
+.resume {
+  align-self: baseline;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+
+  color: var(--font-color-primary);
+  background: var(--gradient-decoration-3);
+
+  cursor: pointer;
+}
+
+@media(max-width: 1280px) {
+  .my-name {
+    font-size: 24px;
+  }
+}
+
 @media (max-width: 1030px) {
   .my-name {
     font-size: 20px;
@@ -58,7 +78,7 @@
   }
 
   .navbar {
-    gap: 12px;
+    gap: 20px;
   }
 }
 
@@ -120,6 +140,11 @@
     width: 30px;
     height: 30px;
     filter: invert(100%);
+  }
+
+  .resume {
+    margin-top: 10px;
+    padding: 6px;
   }
 }
 

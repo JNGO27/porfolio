@@ -18,6 +18,7 @@ const Navbar = () => {
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
+        <a className={styles.resume} href="#">Resume</a>
       </nav>
       <input className={styles["mobile-opener"]} type="checkbox" /> 
         <Image className={styles.menu} src={MenuIcon} alt="menu-icon" />
@@ -27,6 +28,7 @@ const Navbar = () => {
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
+          <a className={styles.resume} href="#">Resume</a>
         </nav>
     </header>
   )
