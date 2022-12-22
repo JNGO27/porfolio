@@ -6,7 +6,7 @@ import CloseIcon from './close-icon.svg';
 import WebLink from './website-link.svg';
 import GitHub from './github.svg';
 import Twitter from './twitter.png';
-import LinkedIn from './linkedin.png'; 
+import LinkedIn from './linkedin.png';
 
 export { 
   Self,

@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { CodingIcon, MenuIcon, CloseIcon } from '../../assets';
+import { CodingIcon, MenuIcon, CloseIcon, } from '../../assets';
 import { logoStyles } from './imageStyles';
 import styles from './styles.module.css';
 
@@ -18,7 +18,7 @@ const Navbar = () => {
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <a className={styles.resume} href="#">Resume</a>
+        <a className={styles.resume} target="_blank" href={PDF} rel="noopener noreferrer">Resume</a>
       </nav>
       <input className={styles["mobile-opener"]} type="checkbox" /> 
         <Image className={styles.menu} src={MenuIcon} alt="menu-icon" />
@@ -28,7 +28,7 @@ const Navbar = () => {
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
-          <a className={styles.resume} href="#">Resume</a>
+          <a className={styles.resume} target="_blank" href={PDF} rel="noopener noreferrer">Resume</a>
         </nav>
     </header>
   )
