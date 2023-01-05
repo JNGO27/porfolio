@@ -62,6 +62,15 @@
   gap: 50px;
 } 
 
+.progress-container {
+  margin-top: 50px;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 50px;
+}
+
 @media (max-width: 1280px) {
   .project-card {
     align-items: center;

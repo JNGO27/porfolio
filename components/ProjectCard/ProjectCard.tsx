@@ -38,7 +38,12 @@ const ProjectCard = ({ title, content, tech, link, github }: Props) => {
           </a>
           </>
         :
-        <h3>in progress...</h3>
+        <div className={styles["progress-container"]}>
+          <h3>in progress...</h3>
+          <a  target="_blank" href={github} rel="noopener noreferrer">
+            <Image src={GitHub} width={34} height={34} alt="github-icon" style={iconStyles} />
+          </a>
+        </div>
       }
       </div>
     </div>

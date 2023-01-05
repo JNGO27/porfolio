@@ -32,10 +32,10 @@ export const projectsArr: ProjectType[] = [
     tabletImg: MorrentTablet,
     mobileImg: MorrentMobile,
     title: "Morrent",
-    content: "An online booking system designed to meet the needs of any car-renting business",
+    content: "An online booking system designed to meet the needs of any car-renting business.",
     tech: ["TypeScript", "React", "Styled Components", "Express", "MongoDB", "Google OAuth 2.0", "Passport.js", "Stripe"],
     link: "",
-    github: "",
+    github: "https://github.com/JNGO27/Morrent-CarRental",
   },
 ];
 
