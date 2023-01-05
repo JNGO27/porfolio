@@ -6,10 +6,10 @@ import styles from './styles.module.css';
 
 const AboutMe = () => {
   return (
-    <div className={styles["about-me"]}>
+    <section className={styles["about-me"]} id="about-me">
       <div className={styles["picture-frame-wrapper"]}>
       <div className={styles["picture-frame"]}>
-        <Image src={Self} width={250} height={250} alt="self-image" style={portraitStyles}/>
+        <Image src={Self} width={225} height={225} alt="self-image" style={portraitStyles}/>
         <div className={styles["heading-wrapper"]}>
           <h1 className={styles.heading}>About Me</h1>
         </div>
@@ -28,8 +28,8 @@ const AboutMe = () => {
         </div>
         <div className={styles.decoration} />
       </div>
-    </div>
+    </section>
   )
 }
 
-export default AboutMe
+export default AboutMe;

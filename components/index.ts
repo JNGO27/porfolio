@@ -1,3 +1,10 @@
 export { default as Navbar } from './Navbar/Navbar';
 export { default as HeroBanner } from './HeroBanner/HeroBanner';
 export { default as AboutMe } from './AboutMe/AboutMe';
+export { default as Projects } from './Projects/Projects';
+export { default as Devices } from './Devices/Devices';
+export { default as ProjectCard } from './ProjectCard/ProjectCard';
+export { default as Skills } from './Skills/Skills';
+export { default as SingleSkill } from './SingleSkill/SingleSkill';
+export { default as ContactMe } from './ContactMe/ContactMe';
+export { default as Footer } from './Footer/Footer';
