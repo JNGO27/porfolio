@@ -18,7 +18,7 @@ const Navbar = () => {
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
-        <a className={styles.resume} target="_blank" href={PDF} rel="noopener noreferrer">Resume</a>
+        <a className={styles.resume} href={'https://www.dropbox.com/s/4igunzfdwh61yhw/Joseph%20Napoleon%20Ochoa%20Resume%20%281%29.pdf?dl=0'} target="_blank" rel="noopener noreferrer">Resume</a>
       </nav>
       <input className={styles["mobile-opener"]} type="checkbox" /> 
         <Image className={styles.menu} src={MenuIcon} alt="menu-icon" />
@@ -28,7 +28,7 @@ const Navbar = () => {
           <a href="#projects">Projects</a>
           <a href="#skills">Skills</a>
           <a href="#contact">Contact</a>
-          <a className={styles.resume} target="_blank" href={PDF} rel="noopener noreferrer">Resume</a>
+          <a className={styles.resume} href={'https://www.dropbox.com/s/4igunzfdwh61yhw/Joseph%20Napoleon%20Ochoa%20Resume%20%281%29.pdf?dl=0'} target="_blank" rel="noopener noreferrer">Resume</a>
         </nav>
     </header>
   )
